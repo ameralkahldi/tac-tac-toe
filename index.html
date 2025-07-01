@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tac-Tik-Tok</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body onload="init()">
-    <h1>Tic Tac Toe </h1>
-    <div id="content"></div>
-    <script src="script.js"></script>
+    <header>
+        <h1>TIC TAC TOE GAME</h1>
+        <ul>
+            <button onclick="friendGame()">Mit Freund Spielen</button>
+            <button onclick="computer()">Mit Computer Spielen</button>
+        </ul>
+    </header>
+    <main>
+        <div id="current_player"></div>
+        <div class="caintaner" id="container">
+
+        </div>
+        <div id="winner_message"></div>
+        <button onclick="resetGame()">Neustarten</button>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
